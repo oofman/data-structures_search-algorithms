@@ -1,0 +1,57 @@
+Data Stuctures:
+-----------------------------------------------------------
+= Concrete Implementation of data
+- Arrays
+- Linked List
+- Heap (technically abstract data type array)
+
+Abstract Data Stuctures:
+-----------------------------------------------------------
+= Define the model (logical description) for a data-structure
+- Stack (arrays / linked Lists)
+- Queue (arrays / linked Lists)
+- Priority Queues (heaps / self balancing trees)
+- Dictionary / Hashmap / Associative arrays (Hashtables / BST)
+- Binary Search Trees
+- Ternary Search Trees - 3 children only (tries as many children)
+
+Skipped Sections:
+-----------------
+- Balanced Binary Trees 
+  - Red-Black Trees
+- Graph Algorithms
+  - Graph traversal
+  - Shortest Paths
+  - Spanning Trees
+- Interview Questions
+    
+```
+FYI: Dijkstra Algorithm
+-----------------------
+O(N*2) -> Without correct data structures
+O(NLogN) -> With correct data structures
+```
+
+Trade-off between:
+------------------
+Running time complexity
+Memory time complexity
+
+Heap VS Stack Memory:
+---------------------
+Stack Memory
+- Stack Memory most important for stack data-type
+- Call-Stack Abstract DT, all active subroutines / methods / function on program
+- Keeps track of point to which each active subrouting should return control
+- limited Size
+- Fast Access
+- Local variables
+- Space is mamaged by CPU in RAM
+- Vars cannot be resized
+Heap Memory:
+- Heap mem uses double-linked-list
+- Larg Region of mem not auto managed (mem leak)
+- no size limits
+- Slow Access
+- reference types & objects
+- mem may be fragmented

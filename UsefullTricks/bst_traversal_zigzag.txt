@@ -1,0 +1,17 @@
+Given a binary tree, print out it's elements from top to bottom in zig-zag order, starting from left to right.
+
+For example, given the tree:
+                2
+              /   \
+            8       5
+          /  \        \
+        4      9       24
+             /       /    \
+           11       3      7
+                             \
+                              12
+
+The result should be : 2, 5, 8, 4, 9, 24, 7, 3, 11, 12
+
+2 rate limit clients(10000) to 10000 requests / 5min
+(running avg)

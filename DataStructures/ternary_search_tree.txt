@@ -1,0 +1,18 @@
+Ternary Search Trees - 3 children only (tries as many children)
+---------------------------------------------------------------
+- Supports search and sort (efficiently)
+- Tries use lots of memory
+- TST
+  - Less references
+  - Less null values
+  - Store chars or strings in node
+- Each node
+  - Less (left child)
+  - equal (middle)
+  - greater (right child)
+- balancing TST not worth the effort
+- used instead of hashmaps
+- hashing examine entire string TST not
+- TST better than hashing
+  - Seach misses
+  - More flexable than BST (no hashing collisions)

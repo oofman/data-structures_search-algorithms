@@ -1,0 +1,47 @@
+Dictionary / Hashmap / Associative arrays:
+------------------------------------------
+- Collection of Key->Value pair
+- Does not support sort
+- Aim O(1) for most opperations
+- O(1) complexity, if we know the key
+- Use hash function to convert keys into array indexes
+  - Rely on Modulo Operator
+  - h(x) = n(number of keys) % m (size of array)
+    - use prime numbers for array size & in our hash (generated indexes will be uniform) 
+    - string keys: convert to ASCII, add them, make use of % (modulo)
+  - Collisions
+    - Chaining -> use linked list, and stor original key with
+    - Open Addressing -> generate new index (better)
+      - Linear probing -> keep trying next index till we get open address.
+      - Quadratic probing -> 1,2,4,8 (units away)
+      - Rehashing -> Double hash to find new address
+- Dynamic Resizing
+  - Load Factor: number_of_entries / size
+    - LF = 1 
+      - its almost full
+      - opperations will be slow
+    - LF = 0
+      - its almost empty
+      - memory waist
+    - Resize at 0.75
+    - O(n) rime complexity
+- Real world Use
+  - Database
+  - Password checks
+  - Lookup tables in huge networks
+  - Substring search (Rabin-Karp Algorithm)
+  - block chain
+
+- Methods:
+  - Add
+  - Remove
+  - Update
+  - Lookup
+
+-------------------
+        AVG   Worst
+-------------------
+Space   O(N)  O(N)
+Search  O(1)  O(N)
+Insert  O(1)  O(N)
+Delete  O(1)  O(N)

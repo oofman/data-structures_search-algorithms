@@ -1,0 +1,14 @@
+Stack:
+------
+  - LIFO
+  - DS: array, linked list
+  - Methods: 
+    - push - O(1)
+    - pop - O(1)
+    - peak - O(1)
+  - Real World Examples
+    - Graph Algorithms like DFS
+    - Euler=cycles in a graph
+    - Strongly connected items
+    - Browser back button
+    - Undo task on Paint

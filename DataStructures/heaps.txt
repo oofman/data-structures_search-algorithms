@@ -1,0 +1,50 @@
+Heaps:
+------
+- Binary Tree/heap
+- 2 Types: min heap / max heap
+- Best implementation for Priority Queues data type
+- Nothing to do with Heap Memory
+- 1-D Array used to store
+
+Application:
+- Dijkstra's Algorithm
+- Prims Algorithm
+
+Properties:
+- Complete (alwas parent, left child, right child)
+- Every node has left & right Child
+- Min Heap - parent is smaller (root node is smallest) - O(1)
+- Max Heap - parent is bigger (root node is biggest) - O(1)
+
+Locate children:
+- Parent = i
+- Left Child = 2i+1
+- Right Child = 2i+2
+
+Running Time Complexity:
+- Construction: O(N) + O(LogN) = O(N)
+- Delete Root: O(1) + O(LogN) = O(LogN)
+- Delete Random Item: O(N) + O(LogN) = O(N)
+- Memory Complexity: O(N)
+- Find Max / Min : O(1)
+- Insert New: O(1) + O(LogN)
+
+Heap Sort:
+- Comparison-based Sorting Algorithm
+- Slower than quick Sort but better worse case - O(N LogN)
+- In Place algorithm (No Additional Memory)
+- Not Stable (order of items with the same keys are not kept)
+- First Construction O(N) Time Complexity
+- Sorting: O(N*LogN)
+
+Binomail Heaps:
+- Basically binary heap
+- Support merging of 2 or more Heaps
+- Implemented as collection of trees
+- Insertion: O(1)
+
+Fibonacci Heaps:
+- Faster than binary Heap
+- Difficult Implementation (mostly not worth the effort)
+- More than 2 childred (but kept low)
+- Insertion: O(1)

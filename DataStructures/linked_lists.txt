@@ -1,0 +1,23 @@
+Linked List:
+------------
+  - Last Node points to Null
+  - Contains: Data & Reference
+  - Implementations: Stacks, Queues
+  - Sequential Access (No Random Access)
+  - Methods:
+    - InsertAtStart - O(1)
+    - InsertAtEnd(n) - O(N)
+    - RemoveAtStart - O(1)
+    - RemoveAtEnd(n) - O(N)
+    - get - O(N) - (Sequential Access)
+  - Pros
+    - Dynamic DS
+    - Efficient manipulating first element (Add/Remove)
+  - Cons
+    - Reference Memory waist
+    - Sequential Access (Read from start to end)
+    - Reverse, double linked list
+  - Real World Examples
+    - Windows Alt+Tab (apps, double-linked-list)
+    - Image Gallery (next, previous)
+    - Blockchains (BitCoin, double-linked-list)

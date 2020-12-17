@@ -1,0 +1,12 @@
+Queue:
+------
+  - FIFO
+  - DS: arrays or linked lists
+  - Methods:
+    - enqueue - O(1)
+    - dequeue - O(1)
+    - peek - O(1)
+  - Real World Examples
+    - Graph Algorithms like BFS
+    - CPU scheduling
+    - Asynchronously data transfers

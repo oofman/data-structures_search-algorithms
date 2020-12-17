@@ -1,0 +1,18 @@
+Arrays:
+-------
+  - Implementations: Lookup Tables / Hashtables, Heaps
+  - Random Access
+  - Methods: 
+    - InsertAtEnd - O(1)
+    - InsertAtStart(index) - O(N)
+    - RemoveAtEnd - 0(1)
+    - RemoveAtStart(index) - O(N)
+    - get(index) - O(N) - (Random Access)
+  - Pros
+    - O(1) time complexity
+    - For adding over and over
+    - For retrieving by index (Random Access)
+  - Cons
+    - Size at compile time (Not Dynamic)
+    - Full, create new copy O(N) operations
+    - Not store items of different type

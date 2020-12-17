@@ -1,0 +1,55 @@
+Sorted Arrays VS Linked Lists (BST):
+------------------------------
+Insert a new Item:
+A: Slow O(N)
+L: Fast O(1)
+Searching:
+A: Fast O(LogN)
+L: Sequental O(N)
+Removing Item:
+A: Slow O(N)
+L: Fast O(1)
+
+Binary Search Tree:
+-------------------
+- Every Node 2 child nodes only
+- Left Child: smaller
+- Right Child bigger
+- O(LogN) running time complexity
+- Faster than Un Sorted Arrays O(N)
+- Slower than Hash Tables O(1)
+- Height ~ O(LogN)
+  - if true balanced Tree
+  - if not asymmetric (problem )
+    - h=LogN not valid
+    - opperations not logarithmic (slow)
+- Space / Memory - O(N)
+- Methods:
+  - Find / Insert - O(LogN)
+  - Delete - O(LogN)
+    - 3 types: 
+      - Leaf node - Just delete ref to node
+      - Node with 1 child - Update parent to point to deleted-node's child
+      - Node with 2 childeren (2 options)
+        (if its a root node)
+        - Predecessor (left tree biggest)
+        - Successor (right tree smallest)
+  - Traversal of BST
+    - In-order Traversal (recursively)
+      - Visit Left Sub-Tree 
+      - Visit Root Node
+      - Visit Right Sub-Tree
+      - Yeilds results in order
+    - Pre-order Traversal (recursively)
+      - Visit Root Node
+      - Visit Left Sub-Tree
+      - Visit Right Sub-Tree
+      - Yeilds results in unordered results
+    - Post-order Traversal (recursively)
+      - Visit Left Sub-tree
+      - Visit Left Sub-tree
+      - Visit Root Node
+- Realworld Application
+  - OS file systems
+  - Game trees (chess, tic-tac-toe)
+  - Decision trees (maching learning)

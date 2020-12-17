@@ -1,0 +1,13 @@
+Priority Queues:
+----------------
+- High Priority value served first
+- Data Structure: Heaps / Self Balancing Tree
+- Similar to Queues
+- NO FIFO / LIFO
+
+Methods:
+  - insertWithPriority(data, priority)
+  - getHighersPriorityElement
+  - peek
+
+# Example: DataStructures/heaps.rb

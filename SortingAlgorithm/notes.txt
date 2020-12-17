@@ -1,0 +1,51 @@
+Sorting Algorithm:
+------------------
+- Comparison based Algorithms
+  - Bubble sort       O(N*2) - Quadratic
+  - Insertion sort    O(N*2) - Quadratic
+  - Selection sort    O(N*2) - Quadratic
+  - Merge sort        O(N LogN) - garenteed
+  - Quick sort        O(N LogN) - O(N*2) worst case
+  - Hybrid Algorithms
+    - Only algorithms that solve the same problem
+    - Intro sort      (quick sort + heap sort)
+    - Tim sort        (insertion sort + merge sort)
+
+- Non-Comparison based Algorithm
+  - Radix/Bucket sort O(N*k) - k = string length
+    - strings only (type cast ints to strings)
+    - Fixed lenght items only
+    - Running time O(K*N) (N = number of items) (K = number of digits in the input number)
+    - Stable
+    - 2 Type: 
+      - LSD - Least Significant Digit first
+        - Right to left
+      - MSD - Most Significant Digit first
+        - Left to right
+        - Possible Sub O(N) can be achived
+  - Counting sort   O(N+K) 
+    - Integers only
+    - Running time (N = number of items) (K = diff between min and max)
+    - Not In Place
+
+- Sorting Algorithm Features
+  - Time Complexity
+    - O(N*2)
+    - O(N Log N) - Best Comparison can do
+    - O(N) - Best Non-Comparison can do
+  - In Place
+    - Only O(1) memory beyond the items being sorted
+    - No extra memory needed
+  - Recursive / Non-Recursive
+    - `devide & conquer` normally Recursive
+    - merge sort & quick sort
+  - Stable
+    - Maintain reletive order of equal values
+
+- Adaptive Algorithms
+  - Changes behavior at runtime
+  - Takes advantage of existing order in its input
+  - It benefits from input orders
+  - Modify existing sorting algorithms to make adaptive
+  - Heap sort & Merge sort non-adaptive
+  - Shell sort is adaptive
