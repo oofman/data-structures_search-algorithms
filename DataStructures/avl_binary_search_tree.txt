@@ -1,0 +1,12 @@
+Balanced Binary Trees (AVL Trees)
+---------------------------------
+BST Opperations depends on the height of the tree.
+Keeping it balanced gives O(LogN) Garanteed
+Heights of 2 child sub trees differes by 1 at max
+Same as Red-Black trees
+
+AVL vs Red-Black:
+- AVL Slower to construct thank Red-Black
+- AVL Quicker to Search than Red-Back
+
+Almost exactly the same as BST, only insert we have to check if balanced

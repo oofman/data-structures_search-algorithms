@@ -20,9 +20,8 @@ class LinkedList
   def insert_end(value)
     @number_of_nodes += 1
     current_node = @head
-    until current_node.next_node.nil?
-      current_node = current_node.next_node
-    end
+    current_node = current_node.next_node until current_node.next_node.nil?
+
     current_node.next_node = Node.new(value, nil)
   end
 
@@ -48,31 +47,24 @@ class LinkedList
 
   # O(N)
   def deletion(value)
-    # start at Head
-    current_node = @head
-
-    # remember previous node to update ref after delete 
-    previous_node = nil
+    current_node = @head # start at Head
+    previous_node = nil # remember previous node to update ref after delete
 
     # Loop while not end and not the value we are looking for
     while !current_node.nil? && current_node.value != value
-      # Keep looping values updated
       previous_node = current_node
       current_node = current_node.next_node
     end
 
-    # search miss
-    return if current_node.nil?
+    return if current_node.nil? # search miss
 
-    # Removing the head Node
-    if previous_node.nil?
+    if previous_node.nil? # Removing the head Node
       @head = current_node.next_node # keep head updated
     else
       previous_node.next_node = current_node.next_node # update ref to remove from list
     end
 
-    # decremint counter if you got this far
-    @number_of_nodes -= 1
+    @number_of_nodes -= 1 # decremint counter if you got this far
   end
 
   # O(N)

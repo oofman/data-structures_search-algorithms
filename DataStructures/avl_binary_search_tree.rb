@@ -107,13 +107,13 @@ class AVLTree
 
     # Update heights
     node.height = [calculate_height(node.left_child), calculate_height(node.right_child)].max + 1
-    temp_left_child.height = [calculate_height(temp_left_child.left_child), 
-                            calculate_height(temp_left_child.right_child)].max + 1
+    temp_left_child.height = [calculate_height(temp_left_child.left_child),
+                              calculate_height(temp_left_child.right_child)].max + 1
   end
 
   # O(1) Constant
   def rotate_left(node)
-    p "Rotating to the left on node ", node.data
+    p 'Rotating to the left on node ', node.data
 
     # Updated references
     temp_right_child = node.right_child
@@ -143,7 +143,7 @@ class AVLTree
     # update heights
     node.height = [calculate_height(node.left_child), calculate_height(node.right_child)].max + 1
     temp_right_child.height = [calculate_height(temp_right_child.left_child),
-                              calculate_height(temp_right_child.right_child)].max + 1
+                               calculate_height(temp_right_child.right_child)].max + 1
   end
 
   def calculate_height(node)

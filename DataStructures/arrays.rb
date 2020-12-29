@@ -1,27 +1,48 @@
-# Random Access
+# Random Access (can access any index)
+
 # Declarations - O(N)
-# arr = Array.new(4, nil)
+# IE: arr = Array.new(4, nil)
 arr = [10, 3, 'Test', 5, 96]
+p 'Working with arr: ' + arr.inspect
 
-# update - O(1)
+# Update Value (index known) - O(1)
 arr[2] = 'Testing'
-p arr[2]
+p 'Updated value at index 2: ' + arr[2]
+p 'Working with arr: ' + arr.inspect
+p '---'
 
-# extracting values (non-destructive) - O(1)
-p arr[0..-3].inspect
-p arr[2]
+# Extracting values (non-destructive) - O(1)
+p 'Listing first 3 values: ' + arr[0..-3].inspect
+p 'Working with arr: ' + arr.inspect
+p '---'
 
-# extracting values (destructive) - O(1)
-p "Extracted: #{arr.pop}"
-p "Left Width: #{arr.inspect}"
+# Extracting values (destructive) - O(1)
+p "Extracting last item: #{arr.pop}"
+p 'Working with arr: ' + arr.inspect
+p '---'
 
-# addition to the end - O(1)
-arr.push(5)
-p arr
+# Addition to the end - O(1)
+p 'Adding 75 to the end of arr: '
+arr.push(75)
+p 'Working with arr: ' + arr.inspect
+p '---'
 
-# Linear Searsh - O(N)
-# Get Max Value:
-arr = [10, 3, 56, 5, 96]
+# Addition to the start - O(N)
+p 'Adding x to the start of arr: '
+arr.unshift('x')
+p 'Working with arr: ' + arr.inspect
+p '---'
+
+# Removing the first item - O(N)
+p 'Removing first item from arr: '
+arr.shift(1)
+p 'Working with arr: ' + arr.inspect
+p '---'
+
+# Linear Search (Get Max Value) - O(N)
+arr = [10, 3, 140, 56, 5, 96]
+p 'Working with arr: ' + arr.inspect
 max_val = arr[0]
 arr.each { |v| max_val = v if v > max_val }
-puts "Max: #{max_val}"
+puts "Max Value: #{max_val}"
+p '---'

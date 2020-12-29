@@ -42,20 +42,20 @@ class BinarySearchTree
     end
   end
 
-  def traverse
+  def traverse_dfs
     @in_order = []
-    traverse_in_order(@root) unless @root.nil?
+    depth_first_search(@root) unless @root.nil?
     puts "DFS Traversal: #{@in_order}"
   end
 
-  def traverse_in_order(node)
+  def depth_first_search(node)
     # recursive to the left get smallest
-    traverse_in_order(node.left_child) if node.left_child
+    depth_first_search(node.left_child) if node.left_child
 
     @in_order.push(node.data)
 
     # recursive to the right till empty
-    traverse_in_order(node.right_child) if node.right_child
+    depth_first_search(node.right_child) if node.right_child
   end
 
   # with iteration
@@ -163,8 +163,7 @@ class BinarySearchTree
       output.push(current.data) # store value to output
     end
 
-    puts 'BFS Traversal:' # print the output
-    puts output.join(" ")
+    puts 'BFS Traversal: [' + output.join(', ') + ']'
   end
 end
 
@@ -179,7 +178,5 @@ bst.insert(11)
 bst.insert(3)
 bst.insert(7)
 bst.insert(12)
-bst.traverse # Depth first search
+bst.traverse_dfs # Depth first search
 bst.traverse_bfs # Breadth first search
-puts 'Looking for: 2 5 8 4 9 24 7 3 11 12'
-bst.traverse_bfs_zigzag
