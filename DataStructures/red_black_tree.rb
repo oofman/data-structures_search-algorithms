@@ -122,7 +122,7 @@ class RedBlackTree
 
     l = ''
     r = ''
-    _p = ''
+    parent = ''
 
     unless node.left_child.nil?
       l = node.left_child.data
@@ -137,11 +137,11 @@ class RedBlackTree
     end
 
     unless node.parent.nil?
-      _p = node.parent.data
+      parent = node.parent.data
     else
-      _p = nil
+      parent = nil
     end
-    p '%s left: %s right: %s parent: %s color: %s' % [node.data, l, r, _p, node.color]
+    p '%s left: %s right: %s parent: %s color: %s' % [node.data, l, r, parent, node.color]
     traverse_in_order(node.right_child) if node.right_child
   end
 
