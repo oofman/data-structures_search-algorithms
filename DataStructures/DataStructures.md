@@ -58,7 +58,6 @@ Heap Memory:
 ```bash
 - Graph Algorithms
   - Graph traversal
-  - Shortest Paths
-  - Spanning Trees
-- Interview Questions
+    - Shortest Paths
+    - Spanning Trees
 ```

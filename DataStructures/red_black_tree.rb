@@ -146,7 +146,7 @@ class RedBlackTree
   end
 
   def rotate_right(node)
-    p 'Rotating to the right on node ', node.data
+    p 'Rotating to the right on node ' + node.data.to_s
 
     temp_left_node = node.left_child
     t = temp_left_node.right_child
@@ -172,7 +172,7 @@ class RedBlackTree
   end
 
   def rotate_left(node)
-    p 'Rotating to the left on node ', node.data
+    p 'Rotating to the left on node ' + node.data.to_s
 
     temp_right_node = node.right_child
     t = temp_right_node.left_child
