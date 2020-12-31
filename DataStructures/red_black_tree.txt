@@ -1,0 +1,28 @@
+Balanced Binary Trees (Red Black Trees)
+---------------------------------------
+(https://gist.github.com/jamesyang124/c7a9256af58cd0f1e0fe)
+
+Only Approximately balanced, unlike AVL but less rotations
+longest path is at max 2 times length than shortest path
+
+AVL vs Red-Black:
+- Red-Black Faster to construct thank AVL
+- Red-Black Slower to Search than AVL
+(for insert/delete intensive trees use Red-black trees)
+
+Logic:
+- Root node always Black
+- Every node is red by default (on insert)
+- Leave nodes always has 2 Black children (nil)
+- Every red node must have a black parent node
+- Every red node must have 2 black child nodes
+- Every path from given node to nil descendant contains same num of black nodes (m)
+- Still rotate like AVL trees (but then fix red & black properties)
+- It guarantee insertion max 2 rotations 
+- guarantee 3 rotations for deletion.
+
+Complexity:
+INSERTION:  O(log n)
+DELETION:   O(log n)
+SEARCH:     O(log n)
+SPACE:      O(n)

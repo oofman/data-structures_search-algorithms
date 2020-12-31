@@ -56,8 +56,6 @@ Heap Memory:
 ### Skipped Sections
 
 ```bash
-- Balanced Binary Trees
-  - Red-Black Trees
 - Graph Algorithms
   - Graph traversal
   - Shortest Paths

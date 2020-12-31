@@ -8,5 +8,8 @@ Same as Red-Black trees
 AVL vs Red-Black:
 - AVL Slower to construct thank Red-Black
 - AVL Quicker to Search than Red-Back
+(for lookup intensive trees use AVL trees)
 
-Almost exactly the same as BST, only insert we have to check if balanced
+Logic: (Almost exactly the same as BST)
+- on every insert we have to check if balanced, and do rotation
+- Leave nodes children must have height is -1 (nil)
