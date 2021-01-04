@@ -1,4 +1,4 @@
-def radixSort(arr)
+def radix_sort(arr)
   temp = []
   res = []
 
@@ -23,4 +23,4 @@ end
 
 arr = [9434, 83, 74, 54, 54, 52, 41, 34, 11]
 p 'Input: ' + arr.inspect
-p 'Result: ' + radixSort(arr).inspect
+p 'Result: ' + radix_sort(arr).inspect
